@@ -31,12 +31,13 @@ Focused on **visual clarity, spacing, and premium interaction feel**.
 
 ---
 
-## 🚀 Future Improvements
-- Keyboard input support
-- Accessibility (ARIA roles)
-- Advanced operations (%, memory keys)
-- Mobile haptics & animations
+## 📌 Out of Scope
+This project was intentionally kept minimal and focused on:
+- Practicing Redux Toolkit state management
+- Building a clean neumorphic UI
 
+Features like keyboard input, advanced math functions, and animations
+were intentionally excluded to keep the scope focused.
 ---
 
 ## 📌 Note

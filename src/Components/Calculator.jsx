@@ -37,9 +37,8 @@ const Calculator = () => {
         <div className='h-[70vh] w-[20vw] p-7 border-2 border-white/30 shadow-[inset_0_0_8px] bg-[#2d3238] rounded-3xl flex flex-col '>
             <div className='h-[20vh] flex items-end flex-col justify-center bg-[#282a2d] border-white/30 p-3 border-2 rounded-2xl'>
                 <div className='text-2xl text-gray-200 opacity-70'>{expression}</div>
-                <div className='text-4xl text-gray-200 font-bold'>{result}</div>
+                <div className='text-4xl text-gray-200 font-bold'>{result.length > 15 ? result.slice(0, 15) : result}</div>
             </div>
-            
             <div className='h-full mt-4 text-5xl grid grid-cols-4 '>
                {buttons.map((btn) => (
                 <button key={btn} 
