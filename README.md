@@ -1,16 +1,55 @@
-# React + Vite
+# Neumorphic Calculator UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern **dark-themed calculator UI** built with a clean neumorphic / soft-glass design.  
+Focused on **visual clarity, spacing, and premium interaction feel**.
 
-Currently, two official plugins are available:
+![Calculator UI](./src/assets/Calculator-ui.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## ✨ Features
+- Dark neumorphic design with soft shadows
+- Clear visual hierarchy for numbers, operators, and actions
+- Primary action (`=`) visually highlighted
+- Minimal, distraction-free layout
+- Responsive and centered layout
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🧠 Design Focus
+- Subtle depth instead of aggressive colors
+- Smooth hover and pressed states
+- Accessible contrast for readability
+- Inspired by modern fintech & system calculator UIs
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠 Tech Stack
+- React
+- Tailwind CSS
+- Redux ToolKit
+
+---
+
+## 🚀 Future Improvements
+- Keyboard input support
+- Accessibility (ARIA roles)
+- Advanced operations (%, memory keys)
+- Mobile haptics & animations
+
+---
+
+## 📌 Note
+This project focuses on **UI/UX quality** rather than complex logic,  
+and is intended as a **design-forward portfolio component**.
+
+---
+
+## 👤 Author
+
+**Syed Shariq**
+- GitHub: [@Syed-Shariqq](https://github.com/Syed-Shariqq)
+
+## 📞 Support
+
+For issues, questions, or contributions, please open an issue or contact the development team.

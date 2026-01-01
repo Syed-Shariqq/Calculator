@@ -6,6 +6,7 @@ import { calculateResult, clearExpression, deleteOne, setExpression } from '../R
 const Calculator = () => {
 
     const buttons = [
+        'C', '(', ')', 'AC',
         '7', '8', '9', '/',
         '4', '5', '6', 'x',
         '1', '2', '3', '-',
@@ -21,6 +22,10 @@ const Calculator = () => {
             dispatch(calculateResult());
          }else if(value === "x"){
             dispatch(setExpression("*"));
+         }else if(value === "AC"){
+            dispatch(clearExpression());
+         }else if(value === "C"){
+            dispatch(deleteOne());
          }else{
             dispatch(setExpression(value))
          }
@@ -34,23 +39,8 @@ const Calculator = () => {
                 <div className='text-2xl text-gray-200 opacity-70'>{expression}</div>
                 <div className='text-4xl text-gray-200 font-bold'>{result}</div>
             </div>
-            <div className='h-[15vh] flex items-center justify-center gap-20'>
-                <button 
-            onClick={() => {
-                dispatch(clearExpression())
-            }}
-            className='px-7 cursor-pointer transition duration-300 hover:bg-[#323437] bg-[#282a2d] text-3xl py-4 shadow-black shadow-2xl rounded-xl'>
-                AC
-            </button>
-            <button 
-            onClick={() => {
-                dispatch(deleteOne())
-            }}
-            className='px-7 cursor-pointer transition duration-300 hover:bg-[#323437] bg-[#282a2d] text-3xl py-4 shadow-black shadow-2xl rounded-xl'>
-                C
-            </button>
-            </div>
-            <div className='h-full text-5xl grid grid-cols-4 '>
+            
+            <div className='h-full mt-4 text-5xl grid grid-cols-4 '>
                {buttons.map((btn) => (
                 <button key={btn} 
                 onClick={() => {
