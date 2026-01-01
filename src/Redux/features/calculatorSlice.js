@@ -6,7 +6,7 @@ export const calculatorSlice = createSlice({
     name: "calculator",
     initialState: {
         expression: "",
-        result: 0,
+        result: "",
         justCalculated: false,
     },
     reducers: {
@@ -20,7 +20,7 @@ export const calculatorSlice = createSlice({
         },
         clearExpression: (state) => {
             state.expression = "";
-            state.result = 0;
+            state.result = "";
             state.justCalculated = false;
         },
         calculateResult: (state) => {
@@ -31,9 +31,11 @@ export const calculatorSlice = createSlice({
                 state.result = "Error";
                 state.justCalculated = true;
             }
+    },
+    deleteOne: (state) => {
+        state.expression = state.expression.slice(0, -1);
     }
 }})
 
-export const { setExpression, clearExpression, calculateResult } = calculatorSlice.actions;
-
+export const { setExpression, clearExpression, calculateResult, deleteOne } = calculatorSlice.actions;
 export default calculatorSlice.reducer;
